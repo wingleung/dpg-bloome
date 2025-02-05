@@ -1,0 +1,57 @@
+// Vitest Snapshot v1
+
+exports[`Performance Tests > Aged Brie performance > should benchmark Aged Brie performance 1`] = `
+{
+  "avgTime": Any<Number>,
+  "name": "Aged Brie",
+  "withinThreshold": true,
+}
+`;
+
+exports[`Performance Tests > Backstage passes performance > should benchmark Backstage passes performance 1`] = `
+{
+  "avgTime": Any<Number>,
+  "name": "Backstage passes",
+  "withinThreshold": true,
+}
+`;
+
+exports[`Performance Tests > Conjured item performance > should benchmark Conjured item performance 1`] = `
+{
+  "avgTime": Any<Number>,
+  "name": "Conjured item",
+  "withinThreshold": true,
+}
+`;
+
+exports[`Performance Tests > Mixed items performance > should benchmark shop with multiple items 1`] = `
+{
+  "avgTime": Any<Number>,
+  "name": "Mixed items",
+  "withinThreshold": true,
+}
+`;
+
+exports[`Performance Tests > Sulfuras performance > should benchmark Sulfuras performance 1`] = `
+{
+  "avgTime": Any<Number>,
+  "name": "Sulfuras",
+  "withinThreshold": true,
+}
+`;
+
+exports[`Performance Tests > default item > should benchmark default item performance 1`] = `
+{
+  "avgTime": Any<Number>,
+  "name": "Default item",
+  "withinThreshold": true,
+}
+`;
+
+exports[`Performance Tests > empty state > should benchmark empty shop performance 1`] = `
+{
+  "avgTime": Any<Number>,
+  "name": "Empty shop",
+  "withinThreshold": true,
+}
+`;

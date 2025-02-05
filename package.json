@@ -1,0 +1,41 @@
+{
+  "name": "gilded-rose-kata",
+  "version": "1.0.0",
+  "description": "Gilded Rose kata in TypeScript",
+  "scripts": {
+    "precompile": "rimraf app/**/*.js test/**/*.js",
+    "compile": "tsc",
+    "pretest": "rimraf app/**/*.js test/**/*.js",
+    "test": "vitest --coverage",
+    "test:approvals": "vitest test/approvals.spec.ts",
+    "test:golden-master": "pnpm dlx ts-node test/golden-master-text-test.ts 10",
+    "test:integration": "vitest --coverage test/integration.spec.ts",
+    "test:performance": "vitest test/performance.spec.ts",
+    "lint": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true ./app",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^18.8.14",
+    "@vitest/coverage-istanbul": "^0.28.5",
+    "lefthook": "^1.10.10",
+    "rimraf": "^4.1.2",
+    "source-map-support": "^0.5.20",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.4.4",
+    "vite-tsconfig-paths": "^4.0.5",
+    "vitest": "^0.28.5"
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/node": "18.15.3"
+    }
+  }
+}
